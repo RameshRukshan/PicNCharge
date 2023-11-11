@@ -1,10 +1,6 @@
 # PicNCharge
 A Mobile application for finding Electric Vehicle charging stations that accessible and available to the Sri Lankans
 
-<div class="WordSection1">
-<h1 class="MsoNormal" style="text-align: center; line-height: 145%; margin: 0in 36.85pt .25pt 41.15pt;" align="center">&nbsp;</h1>
-<span style="font-size: 36pt;"><strong><span style="line-height: 94%;">MOBILE APPLICATION FOR FINDING ELECTRIC VEHICLE (EV) CHARGING STATIONS</span></strong></span>
-<p class="MsoNormal" style="text-align: left; text-indent: 0in; line-height: 107%; margin: 0in 0in 9.25pt 0in;" align="left"><strong><span style="font-size: 16.0pt; line-height: 107%;">&nbsp;</span></strong></p>
 <h1 style="margin: 0in 0in 3.9pt -.25pt;">INTRODUCTION</h1>
 <p class="MsoNormal" style="margin: 0in .2pt 7.75pt -.25pt;">Now a days in worldwide, the automotive industry is changing quickly due to the rapid development of Electric Vehicle (EV) technology, as well as other counties in the world Sri Lanka is no exception with this Electric Vehicle Technology. Because of this, accessible and effective electric vehicle charging infrastructure is becoming more and more important to the more people in Sri Lanka to adopt EVs as a sustainable and environmentally friendly mode of transportation. We suggest the creation of a mobile application for finding Electric Vehicle charging stations that accessible and available to the Sri Lankans across the nation in order to assist this transition and easier to reach.</p>
 <h1 style="margin: 0in 0in 3.9pt -.25pt;">PROBLEM</h1>
@@ -84,9 +80,7 @@ A Mobile application for finding Electric Vehicle charging stations that accessi
 <p class="MsoNormal" style="margin: 0in .2pt 7.7pt -.25pt;">For the future growth of the mobile application for electric vehicle (EV) charging station locations, we are prioritizing innovation, sustainability, and user-centric expansion. We are planning to enhance scalability under a paid subscription plan and introduce features like smart trip planning and predictive maintenance alerts to offer convenience to our users. Additionally, we will cultivate partnerships with major EV manufacturers and charging providers to expand our network. Our user acquisition strategies will involve targeted marketing, referral programs, and localization to reach and engage a wider audience. To remain at the top of the market, we will commit to continuous research and agile development, to ensure our app remains relevant and ahead of industry trends.&nbsp;</p>
 <p class="MsoNormal" style="text-align: left; text-indent: 0in; line-height: 107%; margin: 0in 0in 9.0pt 0in;" align="left">&nbsp;</p>
 <h1 style="margin: 0in 0in 5.5pt -.25pt;">PRESENTATION</h1>
-<p class="MsoNormal" style="margin: 0in .2pt .5pt -.25pt;">https://www.canva.com/design/DAFwxPGx-</p>
-<p class="MsoNormal" style="margin: 0in .2pt .5pt -.25pt;">Q4/SHq5eKajlS31atN5KiwDnA/view?utm_content=DAFwxPGx-</p>
-<p class="MsoNormal" style="margin: 0in .2pt .5pt -.25pt;">Q4&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=publishsharelink<br /><br /></p>
+<p class="MsoNormal" style="margin: 0in .2pt .5pt -.25pt;">https://www.canva.com/design/DAFwxPGx-Q4/SHq5eKajlS31atN5KiwDnA/view?utm_content=DAFwxPGx-Q4&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=publishsharelink</p>
 <h1 style="margin: 0in 0in 5.5pt -.25pt;">UI</h1>
 <p>https://www.figma.com/file/EDKyaV0gcPB0CjXtwAa6vp/Pik-N-Charge-App?type=design&amp;node-id=0%3A1&amp;mode=design&amp;t=MkI6lE72Kdcrbf3d-1</p>
 </div>
