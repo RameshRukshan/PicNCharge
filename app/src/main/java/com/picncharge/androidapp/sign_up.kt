@@ -21,13 +21,17 @@ class sign_up : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
-        
+
+        btn_createAcc=findViewById(R.id.btn_signup_createaccount)
+        btn_cancel = findViewById(R.id.btn_signup_cancel)
+
         btn_createAcc.setOnClickListener(){
             var go_to_verification = Intent(this, Signup_Verification::class.java)
             startActivity(go_to_verification)
         }
 
         btn_cancel.setOnClickListener(){
+
             txt_first_name = findViewById(R.id.txt_signup_firstname)
             txt_laste_name = findViewById(R.id.txt_signup_lastname)
             txt_location = findViewById(R.id.txt_signup_locatin)
