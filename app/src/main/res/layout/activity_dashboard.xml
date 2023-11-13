@@ -28,16 +28,16 @@
         app:srcCompat="@drawable/profile" />
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
         android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="812dp">
 
@@ -55,10 +55,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    app:labelVisibilityMode="labeled"
-                    app:itemTextColor="#00A9AB"
                     app:itemIconTint="#00A9AB"
-                    app:menu="@menu/bottom_menu" >
+                    app:itemTextColor="#00A9AB"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/bottom_menu">
 
                 </com.google.android.material.bottomnavigation.BottomNavigationView>
 

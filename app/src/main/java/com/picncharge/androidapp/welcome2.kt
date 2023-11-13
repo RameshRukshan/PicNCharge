@@ -6,6 +6,6 @@ import android.os.Bundle
 class welcome2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_welcome3)
+        setContentView(R.layout.activity_welcome2)
     }
 }
