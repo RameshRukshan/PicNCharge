@@ -30,6 +30,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:id="@+id/fragment_container"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -45,6 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
+                android:background="@drawable/curved_background"
                 android:backgroundTint="#FFFFFF"
                 app:fabCradleMargin="10dp"
                 app:fabCradleRoundedCornerRadius="100dp">
@@ -56,15 +58,14 @@
                     app:labelVisibilityMode="labeled"
                     app:itemTextColor="#00A9AB"
                     app:itemIconTint="#00A9AB"
-                    app:menu="@menu/bottom_menu" />
+                    app:menu="@menu/bottom_menu" >
 
+                </com.google.android.material.bottomnavigation.BottomNavigationView>
 
             </com.google.android.material.bottomappbar.BottomAppBar>
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
     </FrameLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
