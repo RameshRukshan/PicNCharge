@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="34">
         <activity
+            android:name=".notification"
+            android:exported="false" />
+        <activity
             android:name=".profile"
             android:exported="false" />
         <activity
