@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="34">
         <activity
+            android:name=".map"
+            android:exported="false" />
+        <activity
             android:name=".welcome2"
             android:exported="false">
             <intent-filter>
