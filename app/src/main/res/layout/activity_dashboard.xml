@@ -27,4 +27,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="812dp">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottom_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#FFFFFF"
+                app:fabCradleMargin="10dp"
+                app:fabCradleRoundedCornerRadius="100dp">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    app:labelVisibilityMode="labeled"
+                    app:itemTextColor="#00A9AB"
+                    app:itemIconTint="#00A9AB"
+                    app:menu="@menu/bottom_menu" />
+
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </FrameLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
