@@ -18,6 +18,7 @@ class sign_up : AppCompatActivity() {
     lateinit var txt_email : TextView
     lateinit var txt_username : TextView
     lateinit var txt_password : TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
@@ -49,5 +50,9 @@ class sign_up : AppCompatActivity() {
             txt_password.setText("")
         }
 
+        btn_createAcc.setOnClickListener(){
+            var go_to_signup_verification = Intent(this, Signup_Verification::class.java)
+            startActivity(go_to_signup_verification)
+        }
     }
 }
