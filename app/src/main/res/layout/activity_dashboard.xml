@@ -27,47 +27,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile" />
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/curved_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btn_nav_home"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="812dp">
-
-            <com.google.android.material.bottomappbar.BottomAppBar
-                android:id="@+id/bottom_app_bar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@drawable/curved_background"
-                android:backgroundTint="#FFFFFF"
-                app:fabCradleMargin="10dp"
-                app:fabCradleRoundedCornerRadius="100dp">
-
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    app:itemIconTint="#00A9AB"
-                    app:itemTextColor="#00A9AB"
-                    app:labelVisibilityMode="labeled"
-                    app:menu="@menu/bottom_menu">
-
-                </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-            </com.google.android.material.bottomappbar.BottomAppBar>
-
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
-    </FrameLayout>
-
-
+            android:backgroundTint="#009688"
+            android:text="Home"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/baseline_home_white" />
+        <Button
+            android:id="@+id/btn_nav_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="#009688"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/baseline_pin_drop_24"
+            android:text="Map"/>
+        <Button
+            android:id="@+id/btn_nav_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="#009688"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/baseline_person_24"
+            android:text="Profile"/>
+        <Button
+            android:id="@+id/btn_nav_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="#009688"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/baseline_notifications_24"
+            android:text="Notification"/>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
