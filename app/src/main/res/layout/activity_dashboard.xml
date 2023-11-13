@@ -40,12 +40,13 @@
             android:id="@+id/btn_nav_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#009688"
-            android:text="Home"
-            android:padding="5dp"
-            android:layout_margin="5dp"
             android:layout_gravity="center"
-            android:drawableTop="@drawable/baseline_home_white" />
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#009688"
+            android:drawableTop="@drawable/baseline_home_white"
+            android:padding="5dp"
+            android:text="Home"
+            app:cornerRadius="@dimen/activity_vertical_margin" />
         <Button
             android:id="@+id/btn_nav_map"
             android:layout_width="wrap_content"
