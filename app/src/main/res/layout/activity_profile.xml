@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".map">
+    tools:context=".profile">
+
 
 
     <ImageView
@@ -54,23 +55,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#009688"
-            android:drawableTop="@drawable/baseline_pin_drop_white"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_pin_drop_24"
             android:padding="5dp"
             android:text="Map"
-            app:cornerRadius="@dimen/activity_vertical_margin" />
+            android:textColor="#009688" />
 
         <Button
             android:id="@+id/btn_nav_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:backgroundTint="@color/white"
-            android:drawableTop="@drawable/baseline_person_24"
+            android:backgroundTint="#009688"
+            android:drawableTop="@drawable/baseline_person_white"
             android:padding="5dp"
             android:text="Profile"
-            android:textColor="#009688" />
+            app:cornerRadius="@dimen/activity_vertical_margin" />
 
         <Button
             android:id="@+id/btn_nav_notification"
@@ -103,7 +104,7 @@
                 android:id="@+id/txt18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MAP"
+                android:text="Profile"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
