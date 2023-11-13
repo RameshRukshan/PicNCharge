@@ -5,5 +5,148 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Signup_Verification">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="248dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_full_1" />
+
+    <TextView
+        android:id="@+id/textViewVerification1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="Verification"
+        android:textAlignment="center"
+        android:textColor="#00A9AB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_verification_contactno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+        android:id="@+id/txt_verification_contactno"
+        android:layout_width="285dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/curved_background"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="295dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="__________________________________________"
+        android:textColor="#CC000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verification_verifynumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_verification_verifynumber"
+        android:layout_width="294dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#00A9AB"
+        android:text="Verify Number"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOtp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_verification_otp"
+        android:layout_width="285dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/curved_background"
+        android:ems="10"
+        android:hint="Enter OTP"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVerification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_verification_Verify"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="171dp"
+        android:backgroundTint="#00A9AB"
+        android:text="Verify"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_signup_resend"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="171dp"
+        android:backgroundTint="#F46060"
+        android:text="Resend"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Enter OTP that sensed for [Contact Number enterd]"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verification_Verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/textViewOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textAlignment="center"
+        android:textColor="#00A9AB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLine"
+        android:layout_width="284dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="13dp"
+        android:text="________________________________________"
+        android:textColor="#CC000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_verification_otp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
