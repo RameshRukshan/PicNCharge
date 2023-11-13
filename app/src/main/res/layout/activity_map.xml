@@ -7,7 +7,6 @@
     android:background="#F1F1F1"
     tools:context=".map">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="196dp"
