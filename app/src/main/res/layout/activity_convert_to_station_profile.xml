@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".convert_to_station_profile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_full_1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging Station Name :"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="118dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_name"
+                android:layout_width="285dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="146dp" />
+
+            <TextView
+                android:id="@+id/textView_RegNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging Station Registration Number :"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_RegNumber"
+                android:layout_width="285dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging Station Description :"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_description"
+                android:layout_width="285dp"
+                android:layout_height="60dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_contactNumber01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging Station Contact Number 01 :"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_contactNumber01"
+                android:layout_width="285dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_contactNumber02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging Station Contact Number 02 :"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_contactNumber02"
+                android:layout_width="285dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging Station Address :"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_address"
+                android:layout_width="285dp"
+                android:layout_height="60dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging Station Location :"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <TextView
+                android:id="@+id/textView_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitude"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_longitude"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_latitude"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textViewLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="_______________________________________________"
+                android:textColor="#CC000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_sociallinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charging Station Social Links :"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <TextView
+                android:id="@+id/textView_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_website"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_facebook"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_instagram"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/textView_googlemap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="google Map"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <EditText
+                android:id="@+id/txt_convert_to_station_googlemap"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@drawable/curved_background"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="285dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#00A9AB"
+                android:text="Continue"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_convert_to_station_cancell"
+                android:layout_width="285dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#F46060"
+                android:text="Cancel"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
