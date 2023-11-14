@@ -178,7 +178,10 @@
                 android:id="@+id/section_profile_vehicle_own"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
                 android:orientation="horizontal"
                 android:background="@drawable/curved_background">
 
@@ -220,9 +223,177 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
                         android:paddingRight="20dp"
-                        android:text="Battry Capacity: 40kw"
+                        android:text="Battery Capacity: 40kw"
                         android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/lbl_profile_vehicle_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Port Type: Type 1 (SAE J1772)"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/lbl_profile_vehicle_fast_charging"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Fast Charging: Yes"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/btn_profile_vehicle_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableLeft="@drawable/baseline_edit_24"
+                            android:padding="10dp"
+                            android:text=" Edit"
+                            android:textColor="#009688"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/btn_profile_vehicle_remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableLeft="@drawable/baseline_remove_circle_outline_24"
+                            android:padding="10dp"
+                            android:text=" Remove"
+                            android:textColor="#F44336"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/section_profile_vehicle2_own"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/curved_background">
+
+
+                <ImageView
+                    android:id="@+id/img_profile_vehicle2_tesla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    app:srcCompat="@drawable/_0130424092943_bmw_i3_sale_7_0_removebg_preview" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/lbl_profile_vehicle2_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="BMW i3"
+                        android:textAlignment="viewStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/lbl_profile_vehicle2_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Vehicle No : WP ABCD 1256"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/lbl_profile_vehicle2_battry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Battery Capacity: 40kw"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/lbl_profile_vehicle2_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Port Type: Type 1 (SAE J1772)"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/lbl_profile_vehicle2_fast_charging"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="Fast Charging: Yes"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/btn_profile_vehicle2_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/baseline_edit_24"
+                            android:padding="10dp"
+                            android:text=" Edit"
+                            android:textColor="#009688"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/btn_profile_vehicle2_remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableLeft="@drawable/baseline_remove_circle_outline_24"
+                            android:padding="10dp"
+                            android:text=" Remove"
+                            android:textColor="#F44336"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_profile_section_add_another_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/curved_background"
+                android:backgroundTint="#1A000000"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/btn_profile_add_another_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/baseline_add_circle_outline_24"
+                    android:padding="20dp"
+                    android:text="Add Another Vehicle"
+                    android:textAlignment="center"
+                    android:textColor="#9E9B9B"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
 
         </LinearLayout>
