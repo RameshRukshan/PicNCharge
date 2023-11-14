@@ -98,6 +98,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -389,6 +390,102 @@
                     android:drawableTop="@drawable/baseline_add_circle_outline_24"
                     android:padding="20dp"
                     android:text="Add Another Vehicle"
+                    android:textAlignment="center"
+                    android:textColor="#9E9B9B"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Reviews"
+                android:textColor="#009688"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/section_profile_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/curved_background">
+
+            <TextView
+                android:id="@+id/lbl_profile_charginStation_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Charging Station Name"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Personal Rating : "/>
+
+                <TextView
+                    android:id="@+id/lbl_profile_review_personal_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9/10"
+                    android:textColor="#009688"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="Recommended : "/>
+
+                <TextView
+                    android:id="@+id/lbl_profile_review_recomendedStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#009688"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/lbl_profile_review_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum iaculis dapibus. Integer gravida ut leo in luctus. Duis quis ante dictum, lobortis dolor sit amet, semper eros. Suspendisse vitae enim sapien."/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_profile_section_add_another_review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/curved_background"
+                android:backgroundTint="#1A000000"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/btn_profile_another_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/baseline_add_circle_outline_24"
+                    android:padding="20dp"
+                    android:text="Add Another Review"
                     android:textAlignment="center"
                     android:textColor="#9E9B9B"
                     android:textSize="16sp"
