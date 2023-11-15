@@ -137,11 +137,8 @@
                         android:textColor="#99000000"
                         android:layout_marginLeft="10dp"
                         android:textSize="18sp" />
-
-
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 
