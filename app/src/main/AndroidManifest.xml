@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="34">
         <activity
+            android:name=".edit_profile"
+            android:exported="false" />
+        <activity
             android:name=".convert_to_station_profile"
             android:exported="false" />
         <activity
