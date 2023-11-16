@@ -378,7 +378,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_continue"
+                android:id="@+id/btn_convert_to_station_continue"
                 android:layout_width="285dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="20dp"

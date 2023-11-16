@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="34">
         <activity
+            android:name=".Verification_Station_Profile"
+            android:exported="false" />
+        <activity
             android:name=".add_vehicle"
             android:exported="false" />
         <activity
