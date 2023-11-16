@@ -114,6 +114,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:orientation="vertical">
 
                     <TextView
@@ -139,6 +140,114 @@
                         android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
+            <Button
+                android:id="@+id/btn_profile_convert_to_station_profile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="#009688"
+                android:text="Convert to Station Profile"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btn_profile_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#3D403F"
+                android:text="Change Password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Edit Profile Data"
+                android:textColor="#009688"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/txt_edit_profile_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            <EditText
+                android:id="@+id/txt_edit_profile_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+            <EditText
+                android:id="@+id/txt_edit_profile_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Contact Number"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+            <EditText
+                android:id="@+id/txt_edit_profile_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="email Address"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+            <EditText
+                android:id="@+id/txt_edit_profile_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+            <Button
+                android:id="@+id/btn_profile_edit_save"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="#009688"
+                android:text="Save"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btn_profile_edit_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#F44336"
+                android:text="Cancel" />
         </LinearLayout>
     </ScrollView>
 
