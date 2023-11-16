@@ -4,6 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00A9AB"
     tools:context=".welcome2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="248dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logofull_w1" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView11"-->
+<!--            android:layout_width="287dp"-->
+<!--            android:layout_height="477dp"-->
+<!--            app:srcCompat="@drawable/logofull_w"-->
+<!--            tools:layout_editor_absoluteX="62dp"-->
+<!--            tools:layout_editor_absoluteY="-156dp" />-->
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="250dp"
+            android:layout_height="231dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/depositphotos_243280428_stock_illustration_electric_car_charging_station_sign_removebg_preview"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="294dp"
+            android:layout_height="183dp"
+            android:layout_marginTop="10dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum iaculis dapibus. Integer gravida ut leo in luctus. Duis quis ante dictum, lobortis dolor sit amet, semper eros. Suspendisse vitae enim sapien. Nulla laoreet sem magna, sit amet pulvinar quam pellentesque ac. Mauris ornare, tellus quis eleifend lobortis, mi leo congue metus, vel aliquet massa purus non elit. Sed viverra pulvinar est, quis suscipit sem maximus at. Suspendisse potenti. Sed risus ex, feugiat eu facilisis sed, suscipit sit amet purus."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <Button
+            android:id="@+id/btn_welcome_next"
+            android:layout_width="285dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Next"
+            android:textColor="#00A9AB"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="562dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Designed &amp; Developed by &#xA;Group of Colleges @ NIBM | Copyrights 2023"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="645dp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

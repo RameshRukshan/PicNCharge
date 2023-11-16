@@ -360,7 +360,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="56dp"
-                    android:text="google Map"
+                    android:text="Google Map"
                     tools:layout_editor_absoluteX="38dp"
                     tools:layout_editor_absoluteY="176dp" />
 
