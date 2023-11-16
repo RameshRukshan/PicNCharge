@@ -15,6 +15,7 @@ class edit_profile : AppCompatActivity() {
     lateinit var nav_notification : Button
 
     lateinit var btn_convert_to_station : Button
+    lateinit var btn_change_password : Button
     lateinit var btn_save : Button
     lateinit var btn_cancel : Button
 
@@ -34,6 +35,7 @@ class edit_profile : AppCompatActivity() {
         nav_notification = findViewById(R.id.btn_nav_notification)
 
         btn_convert_to_station = findViewById(R.id.btn_profile_convert_to_station_profile)
+        btn_change_password = findViewById(R.id.btn_profile_change_password)
         btn_cancel = findViewById(R.id.btn_profile_edit_cancel)
         btn_save = findViewById(R.id.btn_profile_edit_save)
 
@@ -54,8 +56,11 @@ class edit_profile : AppCompatActivity() {
             new_first_name.setText("")
             new_phone_number.setText("")
             new_email_address.setText("")
+        }
 
-
+        btn_change_password.setOnClickListener(){
+            var go_to_change_password = Intent(this, change_password::class.java)
+            startActivity(go_to_change_password)
         }
 
         nav_home.setOnClickListener(){
