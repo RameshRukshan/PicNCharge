@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 
 class edit_profile : AppCompatActivity() {
 
@@ -13,6 +14,16 @@ class edit_profile : AppCompatActivity() {
     lateinit var nav_profile : Button
     lateinit var nav_notification : Button
 
+    lateinit var btn_convert_to_station : Button
+    lateinit var btn_save : Button
+    lateinit var btn_cancel : Button
+
+    lateinit var new_first_name : EditText
+    lateinit var new_laset_name : EditText
+    lateinit var new_phone_number : EditText
+    lateinit var new_email_address : EditText
+    lateinit var new_location : EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_profile)
@@ -21,6 +32,31 @@ class edit_profile : AppCompatActivity() {
         nav_map = findViewById(R.id.btn_nav_map)
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
+
+        btn_convert_to_station = findViewById(R.id.btn_profile_convert_to_station_profile)
+        btn_cancel = findViewById(R.id.btn_profile_edit_cancel)
+        btn_save = findViewById(R.id.btn_profile_edit_save)
+
+        new_first_name = findViewById(R.id.txt_edit_profile_first_name)
+        new_laset_name = findViewById(R.id.txt_edit_profile_last_name)
+        new_phone_number = findViewById(R.id.txt_edit_profile_contact_number)
+        new_email_address = findViewById(R.id.txt_edit_profile_email_address)
+        new_location = findViewById(R.id.txt_edit_profile_location)
+
+        btn_convert_to_station.setOnClickListener(){
+            var go_to_station_profile_welcome = Intent(this, welcome2::class.java)
+            startActivity(go_to_station_profile_welcome)
+        }
+
+        btn_cancel.setOnClickListener(){
+            new_location.setText("")
+            new_laset_name.setText("")
+            new_first_name.setText("")
+            new_phone_number.setText("")
+            new_email_address.setText("")
+
+
+        }
 
         nav_home.setOnClickListener(){
             var go_to_home = Intent(this, dashboard::class.java)
