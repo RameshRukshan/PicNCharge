@@ -27,6 +27,357 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_add_vehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="135dp"
+                android:text="Add Vehicle"
+                android:textAlignment="center"
+                android:textColor="#00A9AB"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewLine"
+                android:layout_width="320dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="13dp"
+                android:text="____________________________________________________"
+                android:textColor="#CC000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="106dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal|center_vertical">
+                        <ImageView
+                            android:id="@+id/imageView_car1"
+                            android:layout_width="148dp"
+                            android:layout_height="106dp"
+                            android:background="@drawable/curved_background"
+                            app:srcCompat="@drawable/output_onlinepngtools" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal|center_vertical">
+                        <ImageView
+                            android:id="@+id/imageView_car2"
+                            android:layout_width="148dp"
+                            android:layout_height="106dp"
+                            android:background="@drawable/curved_background"
+                            app:srcCompat="@drawable/output_onlinepngtools" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal|center_vertical">
+                        <ImageView
+                            android:id="@+id/imageView_car3"
+                            android:layout_width="148dp"
+                            android:layout_height="106dp"
+                            android:background="@drawable/curved_background"
+                            app:srcCompat="@drawable/output_onlinepngtools" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal|center_vertical">
+                        <ImageView
+                            android:id="@+id/imageView_car4"
+                            android:layout_width="148dp"
+                            android:layout_height="106dp"
+                            android:background="@drawable/curved_background"
+                            app:srcCompat="@drawable/output_onlinepngtools" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="527dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_upload_photo2"
+                        android:layout_width="343dp"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="0dp"
+                        android:text="*Select car model above, if your model is unavailable please fill other model field"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="118dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_add_vehicle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Other Models :"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="176dp" />
+
+                    <EditText
+                        android:id="@+id/txt_add_vehicle1"
+                        android:layout_width="179dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/curved_background"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="204dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_add_vehicle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="30dp"
+                        android:text="Vehicle Reg No :"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="176dp" />
+
+                    <EditText
+                        android:id="@+id/txt_add_vehicle2"
+                        android:layout_width="179dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/curved_background"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="204dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_add_vehicle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Battery Capacity :"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="176dp" />
+
+                    <EditText
+                        android:id="@+id/txt_add_vehicle3"
+                        android:layout_width="179dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/curved_background"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="204dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_add_vehicle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="6dp"
+                        android:text="Charging Port Type :"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="176dp" />
+
+                    <EditText
+                        android:id="@+id/txt_add_vehicle4"
+                        android:layout_width="179dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/curved_background"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="204dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_charging_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="35dp"
+                        android:text="Charging Type :"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="176dp" />
+
+                    <EditText
+                        android:id="@+id/txt_charging_type"
+                        android:layout_width="179dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/curved_background"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="204dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_fastcharging_support"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Fast Charging Support :"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="176dp" />
+
+                    <EditText
+                        android:id="@+id/txt_fastcharging_support"
+                        android:layout_width="150dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/curved_background"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:paddingLeft="15dp"
+                        tools:layout_editor_absoluteX="38dp"
+                        tools:layout_editor_absoluteY="204dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_add_car"
+                        android:layout_width="285dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#00A9AB"
+                        android:text="Add Car"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_login_password" />
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="285dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="#F46060"
+                        android:text="Cancel"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_login_login" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -85,33 +436,4 @@
             android:text="Notification"
             android:textColor="#009688" />
     </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="100dp"
-                android:layout_marginBottom="100dp"
-                app:layout_constraintStart_toStartOf="parent">
-
-
-            </ScrollView>
-        </LinearLayout>
-    </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

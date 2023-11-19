@@ -38,7 +38,7 @@
             android:exported="false" />
         <activity
             android:name=".welcome2"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
