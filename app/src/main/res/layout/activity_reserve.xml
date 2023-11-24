@@ -39,6 +39,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
             android:orientation="vertical">
 
             <TextView
@@ -145,6 +146,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:layout_marginTop="-5dp"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="horizontal">
@@ -154,15 +157,47 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
-                    android:layout_marginRight="6dp"
-                    android:text="Date and Time :"
+                    android:layout_marginRight="10dp"
+                    android:text="Date for Reservation:"
                     android:textAlignment="textStart"
                     tools:layout_editor_absoluteX="38dp"
                     tools:layout_editor_absoluteY="176dp" />
 
                 <EditText
                     android:id="@+id/txt_reserve_date_time"
-                    android:layout_width="179dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/curved_background"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    tools:layout_editor_absoluteX="38dp"
+                    tools:layout_editor_absoluteY="204dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="-5dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Time for Reservation:"
+                    android:textAlignment="textStart"
+                    tools:layout_editor_absoluteX="38dp"
+                    tools:layout_editor_absoluteY="176dp" />
+
+                <EditText
+                    android:id="@+id/txt_reserve_time"
+                    android:layout_width="match_parent"
                     android:layout_height="28dp"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/curved_background"
