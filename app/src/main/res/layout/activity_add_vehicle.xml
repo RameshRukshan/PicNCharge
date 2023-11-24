@@ -221,7 +221,7 @@
                         tools:layout_editor_absoluteY="176dp" />
 
                     <EditText
-                        android:id="@+id/txt_add_vehicle1"
+                        android:id="@+id/txt_add_vehicle_other_model"
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
@@ -251,7 +251,7 @@
                         tools:layout_editor_absoluteY="176dp" />
 
                     <EditText
-                        android:id="@+id/txt_add_vehicle2"
+                        android:id="@+id/txt_add_vehicle_vehicle_reg_no"
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
@@ -281,7 +281,7 @@
                         tools:layout_editor_absoluteY="176dp" />
 
                     <EditText
-                        android:id="@+id/txt_add_vehicle3"
+                        android:id="@+id/txt_add_vehicle_battry_capacity"
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
@@ -311,7 +311,7 @@
                         tools:layout_editor_absoluteY="176dp" />
 
                     <EditText
-                        android:id="@+id/txt_add_vehicle4"
+                        android:id="@+id/txt_add_vehicle_charging_port"
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
@@ -341,7 +341,7 @@
                         tools:layout_editor_absoluteY="176dp" />
 
                     <EditText
-                        android:id="@+id/txt_charging_type"
+                        android:id="@+id/txt_add_vehicle_charging_type"
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
@@ -371,7 +371,7 @@
                         tools:layout_editor_absoluteY="176dp" />
 
                     <EditText
-                        android:id="@+id/txt_fastcharging_support"
+                        android:id="@+id/txt_add_vehicle_fastcharging_support"
                         android:layout_width="150dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
