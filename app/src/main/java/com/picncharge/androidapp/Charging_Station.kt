@@ -12,6 +12,8 @@ class Charging_Station : AppCompatActivity() {
     lateinit var nav_profile : Button
     lateinit var nav_notification : Button
 
+    lateinit var reservation : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_charging_station)
@@ -21,6 +23,13 @@ class Charging_Station : AppCompatActivity() {
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
 
+        reservation = findViewById(R.id.btn_charging_station_port_reserve)
+
+        reservation.setOnClickListener()
+        {
+            var go_to_reservation = Intent(this,reserve::class.java)
+            startActivity(go_to_reservation)
+        }
 
         nav_home.setOnClickListener(){
             var go_to_home = Intent(this, dashboard::class.java)
