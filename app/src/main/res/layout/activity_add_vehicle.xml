@@ -76,63 +76,101 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginBottom="0dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="10dp"
                     android:gravity="center_horizontal|center_vertical"
                     android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="106dp"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
                         android:layout_marginLeft="10dp"
                         android:orientation="vertical"
+                        android:background="@drawable/curved_background"
                         android:gravity="center_horizontal|center_vertical">
                         <ImageView
                             android:id="@+id/imageView_car1"
                             android:layout_width="148dp"
                             android:layout_height="106dp"
-                            android:background="@drawable/curved_background"
                             app:srcCompat="@drawable/output_onlinepngtools" />
+                        <TextView
+                            android:id="@+id/lbl_add_vehicle_nissan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nissan Leaf"
+                            android:textAlignment="viewStart"
+                            android:textSize="20sp"
+                            android:paddingBottom="10dp"
+                            android:textStyle="bold"/>
 
                     </LinearLayout>
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
                         android:layout_marginLeft="10dp"
                         android:orientation="vertical"
+                        android:background="@drawable/curved_background"
                         android:gravity="center_horizontal|center_vertical">
                         <ImageView
                             android:id="@+id/imageView_car2"
                             android:layout_width="148dp"
                             android:layout_height="106dp"
-                            android:background="@drawable/curved_background"
-                            app:srcCompat="@drawable/output_onlinepngtools" />
+                            app:srcCompat="@drawable/_0130424092943_bmw_i3_sale_7_0_removebg_preview" />
+                        <TextView
+                            android:id="@+id/lbl_add_vehicle_bmw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BMW i3"
+                            android:textAlignment="viewStart"
+                            android:textSize="20sp"
+                            android:paddingBottom="10dp"
+                            android:textStyle="bold"/>
                     </LinearLayout>
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
                         android:layout_marginLeft="10dp"
                         android:orientation="vertical"
+                        android:background="@drawable/curved_background"
                         android:gravity="center_horizontal|center_vertical">
                         <ImageView
                             android:id="@+id/imageView_car3"
                             android:layout_width="148dp"
                             android:layout_height="106dp"
-                            android:background="@drawable/curved_background"
-                            app:srcCompat="@drawable/output_onlinepngtools" />
+                            app:srcCompat="@drawable/compositor" />
+                        <TextView
+                            android:id="@+id/lbl_add_vehicle_tesla"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tesla"
+                            android:textAlignment="viewStart"
+                            android:textSize="20sp"
+                            android:paddingBottom="10dp"
+                            android:textStyle="bold"/>
                     </LinearLayout>
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
                         android:layout_marginLeft="10dp"
+                        android:layout_marginRight="100dp"
                         android:orientation="vertical"
+                        android:background="@drawable/curved_background"
                         android:gravity="center_horizontal|center_vertical">
                         <ImageView
                             android:id="@+id/imageView_car4"
                             android:layout_width="148dp"
                             android:layout_height="106dp"
-                            android:background="@drawable/curved_background"
-                            app:srcCompat="@drawable/output_onlinepngtools" />
+                            app:srcCompat="@drawable/_020_kia_soul_freehold_nj_left_removebg_preview" />
+                        <TextView
+                            android:id="@+id/lbl_add_vehicle_kia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kia Soul"
+                            android:textAlignment="viewStart"
+                            android:textSize="20sp"
+                            android:paddingBottom="10dp"
+                            android:textStyle="bold"/>
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
@@ -353,9 +391,11 @@
 
                     <Button
                         android:id="@+id/btn_add_car"
-                        android:layout_width="285dp"
-                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
                         android:backgroundTint="#00A9AB"
                         android:text="Add Car"
                         android:textSize="16sp"
@@ -365,9 +405,11 @@
 
                     <Button
                         android:id="@+id/btn_cancel"
-                        android:layout_width="285dp"
-                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
                         android:backgroundTint="#F46060"
                         android:text="Cancel"
                         android:textSize="16sp"
