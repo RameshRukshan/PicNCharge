@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="34">
         <activity
+            android:name=".reserve"
+            android:exported="false" />
+        <activity
             android:name=".Charging_Station"
             android:exported="true">
             <intent-filter>
@@ -50,8 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".welcome2"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".dashboard"
             android:exported="false" />
@@ -63,8 +65,7 @@
             android:exported="false" />
         <activity
             android:name=".login"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
