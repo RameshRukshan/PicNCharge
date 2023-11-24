@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".Charging_Station">
+<!--
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_full_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-100dp"
+                app:srcCompat="@drawable/picnchargeimg" />
+            <LinearLayout
+                android:id="@+id/sec_charging_station_open_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="-130dp"
+                android:orientation="vertical"
+                android:backgroundTint="#00A9AB"
+                android:background="@drawable/curved_background"
+                android:gravity="center_horizontal|center_vertical">
+                <TextView
+                    android:id="@+id/lbl_charging_station_open_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open"
+                    android:textAlignment="viewStart"
+                    android:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="80dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-75dp"
+                android:orientation="vertical"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/curved_background"
+                android:gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:id="@+id/lbl_charging_station_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Charging Station Name"
+                    android:textColor="#CC000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_reg_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reg No : 78494"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rating : 6/10"
+                        android:textAlignment="textEnd"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lbl_charging_station_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies enim ut nulla ullamcorper, ut faucibus est tincidunt. "
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Number : "
+                        android:textAlignment="textStart"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+94 71 69 80 110"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#00A9AB"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Web : "
+                        android:textAlignment="textStart"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="www.chargingstation.lk"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#00A9AB"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FaceBook : "
+                        android:textAlignment="textStart"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="/chargingstation"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#00A9AB"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instagram : "
+                        android:textAlignment="textStart"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_instagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="/chargingstation"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#00A9AB"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google Map : "
+                        android:textAlignment="textStart"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_gMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="maps.google.com/StationName"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#00A9AB"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_edit_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Charging Points Availability"
+                android:textAlignment="center"
+                android:textColor="#00A9AB"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/curved_background">
+
+                    <ImageView
+                        android:id="@+id/imageView_port1"
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/type_1__sae_j1772_" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sec_charging_station_port_reserve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00A9AB"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_port_availability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Ports available  from 5"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/lbl_charging_station_port_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100 LKR/ Hr"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                    <Button
+                        android:id="@+id/btn_charging_station_port_reserve"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Reserve"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/curved_background">
+
+                    <ImageView
+                        android:id="@+id/imageView_port2"
+                        android:layout_width="160dp"
+                        android:layout_height="150dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/type_2__mennekes" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sec_charging_station_port2_reserve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#F44336"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_port2_availability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 Ports available from 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lbl_charging_station_port2_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="500 LKR/ Hr"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/btn_charging_station_port2_reserve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Book Later"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Latest Reviews"
+                android:textColor="#009688"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/section_profile_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/curved_background">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Rating : "/>
+
+                    <TextView
+                        android:id="@+id/lbl_profile_review_personal_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9/10"
+                        android:textColor="#009688"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="100dp"
+                        android:text="Recommended : "/>
+
+                    <TextView
+                        android:id="@+id/lbl_profile_review_recomendedStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textColor="#009688"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/lbl_profile_review_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum iaculis dapibus. Integer gravida ut leo in luctus. Duis quis ante dictum, lobortis dolor sit amet, semper eros. Suspendisse vitae enim sapien."/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_profile_section_add_another_review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/curved_background"
+                android:backgroundTint="#1A000000"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/btn_profile_another_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/baseline_add_circle_outline_24"
+                    android:padding="20dp"
+                    android:text="Add Your Review"
+                    android:textAlignment="center"
+                    android:textColor="#9E9B9B"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/curved_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_nav_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_home_24"
+            android:padding="5dp"
+            android:text="Home"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_pin_drop_24"
+            android:padding="5dp"
+            android:text="Map"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_person_24"
+            android:padding="5dp"
+            android:text="Profile"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_notifications_24"
+            android:padding="5dp"
+            android:text="Notification"
+            android:textColor="#009688" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

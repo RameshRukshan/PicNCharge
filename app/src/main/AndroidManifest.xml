@@ -13,6 +13,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="34">
         <activity
+            android:name=".Charging_Station"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".edit_vehicle"
             android:exported="false" />
         <activity
@@ -41,12 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".welcome2"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
         <activity
             android:name=".dashboard"
@@ -59,12 +63,7 @@
             android:exported="false" />
         <activity
             android:name=".login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
         <activity
             android:name=".MainActivity"
