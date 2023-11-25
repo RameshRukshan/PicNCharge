@@ -12,6 +12,8 @@ class reserve : AppCompatActivity() {
     lateinit var nav_profile : Button
     lateinit var nav_notification : Button
 
+    lateinit var btn_reserve : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reserve)
@@ -20,6 +22,13 @@ class reserve : AppCompatActivity() {
         nav_map = findViewById(R.id.btn_nav_map)
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
+
+        btn_reserve = findViewById(R.id.btn_reserve_reserve)
+
+        btn_reserve.setOnClickListener(){
+            var go_to_checkout = Intent(this, checkout::class.java)
+            startActivity(go_to_checkout)
+        }
 
         nav_home.setOnClickListener(){
             var go_to_home = Intent(this, dashboard::class.java)
