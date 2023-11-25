@@ -43,27 +43,14 @@
 
             <TextView
                 android:id="@+id/text_add_vehicle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="135dp"
                 android:text="Add Vehicle"
                 android:textAlignment="center"
                 android:textColor="#00A9AB"
                 android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textViewLine"
-                android:layout_width="320dp"
-                android:layout_height="19dp"
-                android:layout_marginLeft="45dp"
-                android:layout_marginBottom="13dp"
-                android:text="____________________________________________________"
-                android:textColor="#CC000000"
-                android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:layout_marginBottom="20dp"/>
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
