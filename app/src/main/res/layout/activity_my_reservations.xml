@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".my_reservations">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_full_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Reservation"
+            android:textAlignment="center"
+            android:textColor="#00A9AB"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/sec_view_reservation_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:backgroundTint="#00A9AB"
+                android:background="@drawable/curved_background"
+                android:gravity="center_horizontal|center_vertical">
+                <TextView
+                    android:id="@+id/lbl_view_reservation_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27.11.2023"
+                    android:textAlignment="viewStart"
+                    android:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="80dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="-78dp"
+                android:orientation="vertical"
+                android:background="@drawable/curved_background"
+                android:gravity="center_horizontal|center_vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_view_reservation1_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Supercharger"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lbl_view_reservation1_vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tesla Model 3"
+                        android:textAlignment="textEnd"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/img_view_reservation1_port"
+                        android:layout_width="50pt"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/tesla_supercharger" />
+                    <ImageView
+                        android:id="@+id/img_view_reservation1_car"
+                        android:layout_width="100pt"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        app:srcCompat="@drawable/output_onlinepngtools" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_view_reservation1_for_hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="For 2h"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation1_at_charging_station"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="At Chargin Center Name"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation1_from_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From 8.00 AM"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation1_to_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="to 10.00 AM"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/lbl_view_reservation1_vehi_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CJ 1053 Vehicle"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation1_owner_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Own by Ramesh"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation1_contact_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phone 0716980110"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation1_res_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="at 27.11.2023"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sec_view_reservation2_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/curved_background"
+                android:backgroundTint="#F44336"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_view_reservation2_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="80dp"
+                    android:text="30.10.2023"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="-78dp"
+                android:orientation="vertical"
+                android:background="@drawable/curved_background"
+                android:gravity="center_horizontal|center_vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_view_reservation2_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Supercharger"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lbl_view_reservation2_vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tesla Model 3"
+                        android:textAlignment="textEnd"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/img_view_reservation2_port"
+                        android:layout_width="50pt"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/tesla_supercharger" />
+                    <ImageView
+                        android:id="@+id/img_view_reservation2_car"
+                        android:layout_width="100pt"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        app:srcCompat="@drawable/output_onlinepngtools" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_view_reservation2_for_hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="For 2h"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation2_at_charging_station"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="At Chargin Center Name"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation2_from_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From 8.00 AM"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation2_to_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="to 10.00 AM"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/lbl_view_reservation2_vehi_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CJ 1053 Vehicle"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation2_owner_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Own by Ramesh"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation2_contact_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phone 0716980110"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_view_reservation2_res_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="at 27.11.2023"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/curved_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_nav_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_home_24"
+            android:padding="5dp"
+            android:text="Home"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_pin_drop_24"
+            android:padding="5dp"
+            android:text="Map"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_person_24"
+            android:padding="5dp"
+            android:text="Profile"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_notifications_24"
+            android:padding="5dp"
+            android:text="Notification"
+            android:textColor="#009688" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
