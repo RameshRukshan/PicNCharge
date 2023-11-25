@@ -4,6 +4,403 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F1F1F1"
     tools:context=".checkout">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_full_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkout"
+                android:textAlignment="center"
+                android:textColor="#00A9AB"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reservation #002-U2471"
+                android:textAlignment="center"
+                android:textColor="#00A9AB"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/curved_background"
+                android:gravity="center_horizontal|center_vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_checkout_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Supercharger"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lbl_checkout_vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tesla Model 3"
+                        android:textAlignment="textEnd"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/img_checkout_port"
+                        android:layout_width="50pt"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/tesla_supercharger" />
+                    <ImageView
+                        android:id="@+id/img_checkout_car"
+                        android:layout_width="100pt"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        app:srcCompat="@drawable/output_onlinepngtools" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_checkout_for_hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="For 2h"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_checkout_at_charging_station"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="At Chargin Center Name"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_checkout_from_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From 8.00 AM"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_checkout_to_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="to 10.00 AM"
+                            android:textAlignment="textStart"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/lbl_checkout_vehi_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CJ 1053 Vehicle"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_checkout_owner_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Own by Ramesh"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_checkout_contact_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phone 0716980110"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                        <TextView
+                            android:id="@+id/lbl_checkout_res_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="at 27.11.2023"
+                            android:textAlignment="textEnd"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fee for For 1h"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number of Hours"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tax and Service Charge"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Charging Fee"
+                        android:textAlignment="textStart"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/lbl_checkout_fee_for_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="450 LKR"
+                        android:textAlignment="textEnd"
+                        android:textColor="#00A9AB"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/lbl_checkout_hours_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2 Hrs"
+                        android:textAlignment="textEnd"
+                        android:textColor="#00A9AB"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/lbl_checkout_fee_tax_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="000 LKR"
+                        android:textAlignment="textEnd"
+                        android:textColor="#00A9AB"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/lbl_checkout_fee_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="900 LKR"
+                        android:textAlignment="textEnd"
+                        android:textColor="#00A9AB"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a Payment Method"
+                android:textAlignment="textStart"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/sec_checkout_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/curved_background"
+                    android:gravity="center_horizontal|center_vertical">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/creditcard_g" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit or Debit Card"
+                        android:textAlignment="textStart"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sec_checkout_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:background="@drawable/curved_background"
+                    android:gravity="center_horizontal|center_vertical">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/cash_g" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cash on Station"
+                        android:textAlignment="textStart"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/curved_background"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_nav_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_home_24"
+            android:padding="5dp"
+            android:text="Home"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_pin_drop_24"
+            android:padding="5dp"
+            android:text="Map"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_person_24"
+            android:padding="5dp"
+            android:text="Profile"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/btn_nav_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/baseline_notifications_24"
+            android:padding="5dp"
+            android:text="Notification"
+            android:textColor="#009688" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
