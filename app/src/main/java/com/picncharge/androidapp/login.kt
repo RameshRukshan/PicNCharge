@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class login : AppCompatActivity() {
 
@@ -33,14 +34,20 @@ class login : AppCompatActivity() {
             txt_password = findViewById(R.id.txt_login_password)
             txt_username = findViewById(R.id.txt_login_username)
 
-            if(txt_username.equals("test") && txt_password.equals("test123")){
+            val username = txt_username.text.toString()
+            val password = txt_password.text.toString()
 
+            if(username.isEmpty() or password.isEmpty()){
+                Toast.makeText(this, "Please Enter Email and Password", Toast.LENGTH_SHORT).show()
             }else{
-
+                if(username == ("test") && password == ("test123")){
+                    var go_to_dashboard = Intent(this,dashboard::class.java)
+                    startActivity(go_to_dashboard)
+                }else{
+                    txt_password.setBackgroundResource(R.drawable.errortxt)
+                    txt_username.setBackgroundResource(R.drawable.errortxt)
+                }
             }
-
-            var go_to_dashboard = Intent(this,dashboard::class.java)
-            startActivity(go_to_dashboard)
 
         }
         btn_cancel.setOnClickListener(){
@@ -50,6 +57,9 @@ class login : AppCompatActivity() {
 
             txt_username.setText("")
             txt_password.setText("")
+
+            txt_password.setBackgroundResource(R.drawable.curved_background)
+            txt_username.setBackgroundResource(R.drawable.curved_background)
         }
     }
 }
