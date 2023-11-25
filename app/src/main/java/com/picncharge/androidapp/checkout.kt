@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.LinearLayout
 
 class checkout : AppCompatActivity() {
 
@@ -11,6 +12,8 @@ class checkout : AppCompatActivity() {
     lateinit var nav_map : Button
     lateinit var nav_profile : Button
     lateinit var nav_notification : Button
+
+    lateinit var opt_cash_on_station : LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +23,13 @@ class checkout : AppCompatActivity() {
         nav_map = findViewById(R.id.btn_nav_map)
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
+
+        opt_cash_on_station = findViewById(R.id.sec_checkout_cash)
+
+        opt_cash_on_station.setOnClickListener(){
+            var go_to_view_reservation = Intent(this, view_reservation::class.java)
+            startActivity(go_to_view_reservation)
+        }
 
         nav_home.setOnClickListener(){
             var go_to_home = Intent(this, dashboard::class.java)

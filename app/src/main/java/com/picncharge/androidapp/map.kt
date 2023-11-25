@@ -10,6 +10,7 @@ class map : AppCompatActivity() {
     lateinit var nav_map : Button
     lateinit var nav_profile : Button
     lateinit var nav_notification : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
@@ -18,6 +19,12 @@ class map : AppCompatActivity() {
         nav_map = findViewById(R.id.btn_nav_map)
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
+
+        var test_btn = findViewById<Button>(R.id.btn_test)
+        test_btn.setOnClickListener(){
+            var go_to_cS = Intent(this, Charging_Station::class.java)
+            startActivity(go_to_cS)
+        }
 
         nav_home.setOnClickListener(){
             var go_to_home = Intent(this, dashboard::class.java)

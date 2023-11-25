@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="34">
         <activity
+            android:name=".view_reservation"
+            android:exported="false" />
+        <activity
             android:name=".checkout"
             android:exported="false" />
         <activity
