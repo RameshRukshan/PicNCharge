@@ -280,14 +280,12 @@
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
 
-                    <EditText
-                        android:id="@+id/txt_add_vehicle_battry_capacity"
+                    <Spinner
+                        android:id="@+id/spinner_battery_capacity"
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
                         android:background="@drawable/curved_background"
-                        android:ems="10"
-                        android:inputType="text"
                         android:paddingLeft="15dp"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="204dp" />
@@ -310,14 +308,12 @@
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
 
-                    <EditText
-                        android:id="@+id/txt_add_vehicle_charging_port"
+                    <Spinner
+                        android:id="@+id/spinner_charging_port"
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
                         android:background="@drawable/curved_background"
-                        android:ems="10"
-                        android:inputType="text"
                         android:paddingLeft="15dp"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="204dp" />
@@ -340,14 +336,12 @@
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
 
-                    <EditText
-                        android:id="@+id/txt_add_vehicle_charging_type"
+                    <Spinner
+                        android:id="@+id/spinner_charging_type"
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
                         android:background="@drawable/curved_background"
-                        android:ems="10"
-                        android:inputType="text"
                         android:paddingLeft="15dp"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="204dp" />
@@ -357,6 +351,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="-5dp"
+                    android:background="#F1F1F1"
                     android:gravity="center_horizontal|center_vertical"
                     android:orientation="horizontal">
 
@@ -370,17 +365,29 @@
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
 
-                    <EditText
-                        android:id="@+id/txt_add_vehicle_fastcharging_support"
-                        android:layout_width="150dp"
-                        android:layout_height="28dp"
-                        android:layout_marginTop="0dp"
-                        android:background="@drawable/curved_background"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:paddingLeft="15dp"
-                        tools:layout_editor_absoluteX="38dp"
-                        tools:layout_editor_absoluteY="204dp" />
+                    <RadioGroup
+                        android:id="@+id/radio_group_fast_charging_support"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="0dp">
+
+                        <RadioButton
+                            android:id="@+id/radio_yes_fast_charging"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:checked="false"
+                            android:layout_marginEnd="20dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_no_fast_charging"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:layout_marginEnd="20dp"
+                            android:text="No" />
+                    </RadioGroup>
                 </LinearLayout>
 
                 <LinearLayout
