@@ -14,6 +14,7 @@ class checkout : AppCompatActivity() {
     lateinit var nav_notification : Button
 
     lateinit var opt_cash_on_station : LinearLayout
+    lateinit var opt_card : LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,12 @@ class checkout : AppCompatActivity() {
         nav_notification = findViewById(R.id.btn_nav_notification)
 
         opt_cash_on_station = findViewById(R.id.sec_checkout_cash)
+        opt_card = findViewById(R.id.sec_checkout_card)
+
+        opt_card.setOnClickListener(){
+            var go_to_card_details = Intent(this, addCard::class.java)
+            startActivity(go_to_card_details)
+        }
 
         opt_cash_on_station.setOnClickListener(){
             var go_to_view_reservation = Intent(this, view_reservation::class.java)

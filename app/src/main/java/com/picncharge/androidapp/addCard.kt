@@ -21,6 +21,8 @@ class addCard : AppCompatActivity() {
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
 
+
+
         nav_home.setOnClickListener(){
             var go_to_home = Intent(this, dashboard::class.java)
             startActivity(go_to_home)
