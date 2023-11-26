@@ -4,55 +4,73 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+
 
 class sign_up : AppCompatActivity() {
 
-    lateinit var btn_createAcc : Button
-    lateinit var btn_cancel : Button
+    private lateinit var usernameEditText: EditText
+    private lateinit var emailEditText: EditText
+    private lateinit var passwordEditText: EditText
+    private lateinit var firstnameEditText: EditText
+    private lateinit var lastnameEditText: EditText
+    private lateinit var locationEditText: EditText
+    private lateinit var nicEditText: EditText
+    private lateinit var cancelButton: Button
+    private lateinit var signUpButton: Button
 
-    lateinit var txt_first_name : TextView
-    lateinit var txt_laste_name : TextView
-    lateinit var txt_location : TextView
-    lateinit var txt_nic :TextView
-    lateinit var txt_email : TextView
-    lateinit var txt_username : TextView
-    lateinit var txt_password : TextView
+    private lateinit var databaseReference: DatabaseReference
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        btn_createAcc=findViewById(R.id.btn_signup_createaccount)
-        btn_cancel = findViewById(R.id.btn_signup_cancel)
+        usernameEditText = findViewById(R.id.txt_signup_username)
+        emailEditText = findViewById(R.id.txt_signup_emailaddress)
+        passwordEditText = findViewById(R.id.txt_signup_password)
+        firstnameEditText = findViewById(R.id.txt_signup_firstname)
+        lastnameEditText = findViewById(R.id.txt_signup_lastname)
+        locationEditText = findViewById(R.id.txt_signup_locatin)
+        nicEditText = findViewById(R.id.txt_signup_nicnumber)
+        cancelButton = findViewById(R.id.btn_signup_cancel)
+        signUpButton = findViewById(R.id.btn_signup_createaccount)
 
-        btn_createAcc.setOnClickListener(){
-            var go_to_verification = Intent(this, Signup_Verification::class.java)
-            startActivity(go_to_verification)
+        databaseReference = FirebaseDatabase.getInstance().reference.child("users")
+
+        signUpButton.setOnClickListener {
+            val firstname = firstnameEditText.text.toString()
+            val lastname = lastnameEditText.text.toString()
+            val location = locationEditText.text.toString()
+            val nic = nicEditText.text.toString()
+            val email = emailEditText.text.toString()
+            val username = usernameEditText.text.toString()
+            val password = passwordEditText.text.toString()
+            val user = User(firstname, lastname, location, nic, email, username, password)
+            saveUserToFirebase(user)
+
         }
 
-        btn_cancel.setOnClickListener(){
+        cancelButton.setOnClickListener {
+            firstnameEditText.setText("")
+            lastnameEditText.setText("")
+            locationEditText.setText("")
+            nicEditText.setText("")
+            emailEditText.setText("")
+            usernameEditText.setText("")
+            passwordEditText.setText("")
 
-            txt_first_name = findViewById(R.id.txt_signup_firstname)
-            txt_laste_name = findViewById(R.id.txt_signup_lastname)
-            txt_location = findViewById(R.id.txt_signup_locatin)
-            txt_nic = findViewById(R.id.txt_signup_nicnumber)
-            txt_email = findViewById(R.id.txt_signup_emailaddress)
-            txt_username = findViewById(R.id.txt_signup_username)
-            txt_password = findViewById(R.id.txt_signup_password)
-
-            txt_first_name.setText("")
-            txt_laste_name.setText("")
-            txt_location.setText("")
-            txt_nic.setText("")
-            txt_email.setText("")
-            txt_username.setText("")
-            txt_password.setText("")
         }
+    }
 
-        btn_createAcc.setOnClickListener(){
-            var go_to_signup_verification = Intent(this, Signup_Verification::class.java)
-            startActivity(go_to_signup_verification)
+    private fun saveUserToFirebase(user: User) {
+        val userId = databaseReference.push().key // Create a unique key for the user
+        userId?.let {
+            databaseReference.child(it).setValue(user)
         }
     }
 }

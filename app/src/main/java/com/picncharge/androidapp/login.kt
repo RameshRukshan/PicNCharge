@@ -20,7 +20,7 @@ class login : AppCompatActivity() {
     lateinit var txt_username : EditText
     lateinit var txt_password : EditText
 
-    private lateinit var database : DatabaseReference
+   private lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
