@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -55,9 +57,14 @@
         <activity
             android:name=".welcome2"
             android:exported="false" />
-        <activity
-            android:name=".dashboard"
-            android:exported="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCgMz0yg50g25UsAgtg8NhUZZH18-eQziI" />
+            <activity
+                android:name=".dashboard"
+                android:exported="false"
+                android:label="dashboard">
+            </activity>
         <activity
             android:name=".Signup_Verification"
             android:exported="false" />
