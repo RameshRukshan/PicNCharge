@@ -7,6 +7,10 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.firebase.Firebase
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.database
 
 class login : AppCompatActivity() {
 
@@ -15,6 +19,8 @@ class login : AppCompatActivity() {
     lateinit var btn_cancel : Button
     lateinit var txt_username : EditText
     lateinit var txt_password : EditText
+
+    private lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,20 +37,41 @@ class login : AppCompatActivity() {
 
         btn_login.setOnClickListener(){
 
+            val database = Firebase.database
+            val myRef = database.getReference("message")
+
+            myRef.setValue("Hello, World!")
+
             txt_password = findViewById(R.id.txt_login_password)
             txt_username = findViewById(R.id.txt_login_username)
 
             val username = txt_username.text.toString()
             val password = txt_password.text.toString()
 
+
             if(username.isEmpty() or password.isEmpty()){
-                Toast.makeText(this, "Please Enter Email and Password", Toast.LENGTH_SHORT).show()
+
+                if(username.isEmpty() and password.isEmpty()){
+                    txt_password.setError("Password Can't be Empty")
+                    txt_password.setBackgroundResource(R.drawable.errortxt)
+                    txt_username.setError("Username Can't be Empty")
+                    txt_username.setBackgroundResource(R.drawable.errortxt)
+                }else if(username.isEmpty()){
+                    txt_username.setError("Username Can't be Empty")
+                    txt_username.setBackgroundResource(R.drawable.errortxt)
+                }else if (password.isEmpty()) {
+                    txt_password.setError("Password Can't be Empty")
+                    txt_password.setBackgroundResource(R.drawable.errortxt)
+                }
+
             }else{
                 if(username == ("test") && password == ("test123")){
                     var go_to_dashboard = Intent(this,dashboard::class.java)
                     startActivity(go_to_dashboard)
                 }else{
+                    txt_password.setError("Invalid Credentials")
                     txt_password.setBackgroundResource(R.drawable.errortxt)
+                    txt_username.setError("Invalid Credentials")
                     txt_username.setBackgroundResource(R.drawable.errortxt)
                 }
             }
@@ -57,6 +84,9 @@ class login : AppCompatActivity() {
 
             txt_username.setText("")
             txt_password.setText("")
+
+            txt_password.setError(null)
+            txt_username.setError(null)
 
             txt_password.setBackgroundResource(R.drawable.curved_background)
             txt_username.setBackgroundResource(R.drawable.curved_background)
