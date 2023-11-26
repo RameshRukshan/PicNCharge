@@ -59,7 +59,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_signup_firstname" />
 
-    <EditText
+
+    <Spinner
         android:id="@+id/txt_signup_locatin"
         android:layout_width="285dp"
         android:layout_height="44dp"
