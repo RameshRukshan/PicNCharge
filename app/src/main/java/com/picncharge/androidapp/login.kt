@@ -7,10 +7,6 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.google.firebase.Firebase
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.database
 
 class login : AppCompatActivity() {
 
@@ -19,8 +15,6 @@ class login : AppCompatActivity() {
     lateinit var btn_cancel : Button
     lateinit var txt_username : EditText
     lateinit var txt_password : EditText
-
-    private lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,11 +30,6 @@ class login : AppCompatActivity() {
         }
 
         btn_login.setOnClickListener(){
-
-            val database = Firebase.database
-            val myRef = database.getReference("message")
-
-            myRef.setValue("Hello, World!")
 
             txt_password = findViewById(R.id.txt_login_password)
             txt_username = findViewById(R.id.txt_login_username)
