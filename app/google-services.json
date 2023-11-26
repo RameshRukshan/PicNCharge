@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "287030094360",
+    "project_id": "picncharge",
+    "storage_bucket": "picncharge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287030094360:android:9c499d7fd8eacc570bf16d",
+        "android_client_info": {
+          "package_name": "com.picncharge.androidapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpSMiJ2ZhEUnbateSliVdtUMBrDUKbG9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
