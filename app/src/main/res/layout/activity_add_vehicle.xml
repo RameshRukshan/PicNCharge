@@ -81,15 +81,17 @@
                             android:layout_width="148dp"
                             android:layout_height="106dp"
                             app:srcCompat="@drawable/output_onlinepngtools" />
+
                         <TextView
                             android:id="@+id/lbl_add_vehicle_nissan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
                             android:text="Nissan Leaf"
                             android:textAlignment="viewStart"
+                            android:textColor="#000000"
                             android:textSize="20sp"
-                            android:paddingBottom="10dp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                     <LinearLayout
@@ -104,15 +106,17 @@
                             android:layout_width="148dp"
                             android:layout_height="106dp"
                             app:srcCompat="@drawable/_0130424092943_bmw_i3_sale_7_0_removebg_preview" />
+
                         <TextView
                             android:id="@+id/lbl_add_vehicle_bmw"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
                             android:text="BMW i3"
                             android:textAlignment="viewStart"
+                            android:textColor="#000000"
                             android:textSize="20sp"
-                            android:paddingBottom="10dp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="200dp"
@@ -133,6 +137,7 @@
                             android:text="Tesla"
                             android:textAlignment="viewStart"
                             android:textSize="20sp"
+                            android:textColor="#000000"
                             android:paddingBottom="10dp"
                             android:textStyle="bold"/>
                     </LinearLayout>
@@ -156,6 +161,7 @@
                             android:text="Kia Soul"
                             android:textAlignment="viewStart"
                             android:textSize="20sp"
+                            android:textColor="#000000"
                             android:paddingBottom="10dp"
                             android:textStyle="bold"/>
                     </LinearLayout>
@@ -184,6 +190,7 @@
                         android:layout_marginRight="0dp"
                         android:text="*Select car model above, if your model is unavailable please fill other model field"
                         android:textAlignment="center"
+                        android:textColor="#2B2929"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="38dp"
@@ -204,6 +211,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginRight="40dp"
                         android:text="Other Models :"
+                        android:textColor="#2B2929"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
 
@@ -212,6 +220,7 @@
                         android:layout_width="179dp"
                         android:layout_height="28dp"
                         android:layout_marginTop="0dp"
+                        android:textColor="#2B2929"
                         android:background="@drawable/curved_background"
                         android:ems="10"
                         android:inputType="text"
@@ -234,6 +243,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginRight="30dp"
                         android:text="Vehicle Reg No :"
+                        android:textColor="#2B2929"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
 
@@ -245,6 +255,7 @@
                         android:background="@drawable/curved_background"
                         android:ems="10"
                         android:inputType="text"
+                        android:textColor="#2B2929"
                         android:paddingLeft="15dp"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="204dp" />
@@ -264,6 +275,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginRight="20dp"
                         android:text="Battery Capacity :"
+                        android:textColor="#2B2929"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
 
@@ -274,6 +286,7 @@
                         android:layout_marginTop="0dp"
                         android:background="@drawable/curved_background"
                         android:paddingLeft="15dp"
+                        android:textColor="#2B2929"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="204dp" />
                 </LinearLayout>
@@ -291,6 +304,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:layout_marginRight="6dp"
+                        android:textColor="#2B2929"
                         android:text="Charging Port Type :"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
@@ -302,6 +316,7 @@
                         android:layout_marginTop="0dp"
                         android:background="@drawable/curved_background"
                         android:paddingLeft="15dp"
+                        android:textColor="#2B2929"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="204dp" />
                 </LinearLayout>
@@ -320,6 +335,7 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginRight="35dp"
                         android:text="Charging Type :"
+                        android:textColor="#2B2929"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="176dp" />
 
@@ -330,6 +346,7 @@
                         android:layout_marginTop="0dp"
                         android:background="@drawable/curved_background"
                         android:paddingLeft="15dp"
+                        android:textColor="#2B2929"
                         tools:layout_editor_absoluteX="38dp"
                         tools:layout_editor_absoluteY="204dp" />
                 </LinearLayout>
@@ -347,6 +364,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
+                        android:textColor="#2B2929"
                         android:layout_marginRight="15dp"
                         android:text="Fast Charging Support :"
                         tools:layout_editor_absoluteX="38dp"
@@ -365,6 +383,7 @@
                             android:layout_height="wrap_content"
                             android:text="Yes"
                             android:checked="false"
+                            android:textColor="#2B2929"
                             android:layout_marginEnd="20dp"/>
 
                         <RadioButton
@@ -372,6 +391,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="false"
+                            android:textColor="#2B2929"
                             android:layout_marginEnd="20dp"
                             android:text="No" />
                     </RadioGroup>
@@ -384,7 +404,7 @@
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/btn_add_car"
+                        android:id="@+id/btn_add_vehicle_add_car"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
