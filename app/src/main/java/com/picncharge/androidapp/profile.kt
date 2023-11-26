@@ -15,6 +15,8 @@ class profile : AppCompatActivity() {
 
     lateinit var to_edit_profile : Button
     lateinit var to_add_car : TextView
+
+    lateinit var to_edit_vehicle : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
@@ -26,6 +28,13 @@ class profile : AppCompatActivity() {
 
         to_edit_profile = findViewById(R.id.btn_profile_edit)
         to_add_car = findViewById(R.id.btn_profile_add_another_vehicle)
+
+        to_edit_vehicle = findViewById(R.id.btn_profile_vehicle_edit)
+
+        to_edit_vehicle.setOnClickListener(){
+            var go_to_edit_vehicle = Intent(this, edit_vehicle::class.java)
+            startActivity(go_to_edit_vehicle)
+        }
 
         to_add_car.setOnClickListener(){
             var go_to_add_vehicle = Intent(this, add_vehicle::class.java)
