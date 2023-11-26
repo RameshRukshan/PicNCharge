@@ -40,6 +40,6 @@ class my_reservations : AppCompatActivity() {
             var go_to_notification = Intent(this, notification::class.java)
             startActivity(go_to_notification)
         }
-        
+
     }
 }
