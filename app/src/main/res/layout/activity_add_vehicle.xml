@@ -445,7 +445,7 @@
             android:backgroundTint="@color/white"
             android:drawableTop="@drawable/baseline_pin_drop_24"
             android:padding="5dp"
-            android:text="Map"
+            android:text="Station"
             android:textColor="#009688" />
 
         <Button
