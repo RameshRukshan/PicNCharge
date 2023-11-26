@@ -15,8 +15,8 @@ class add_vehicle : AppCompatActivity() {
     lateinit var nav_notification : Button
 
     // Define arrays of values for each spinner
-    val batteryCapacityValues = arrayOf("Value 1", "Value 2", "Value 3", "Value 4", "Value 5")
-    val chargingPortValues = arrayOf("Port 1", "Port 2", "Port 3", "Port 4", "Port 5")
+    val batteryCapacityValues = arrayOf("100 kWh", "50 kWh", "75 kWh", "66 kWh", "40 kWh", "90 kWh", "42.2 kWh", "88 kWh")
+    val chargingPortValues = arrayOf("Type 1 SEAJ1772", "Type 2 Mennekes", "CHAdeMO", "CCS", "Supercharger")
     val chargingTypeValues = arrayOf("Type A", "Type B", "Type C", "Type D", "Type E")
 
     override fun onCreate(savedInstanceState: Bundle?) {
