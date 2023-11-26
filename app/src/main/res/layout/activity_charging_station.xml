@@ -87,7 +87,7 @@
                     android:layout_weight="1"
                     android:layout_marginTop="30dp"
                     android:layout_marginLeft="10dp"
-                    android:text="Charging Station Name"
+                    android:text="ChargeNET Colombo 7"
                     android:textColor="#CC000000"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -107,6 +107,7 @@
                         android:layout_height="wrap_content"
                         android:text="Reg No : 78494"
                         android:textAlignment="textStart"
+                        android:textColor="#1B1A1A"
                         android:textSize="15sp" />
 
                     <TextView
@@ -115,6 +116,7 @@
                         android:layout_height="wrap_content"
                         android:text="Rating : 6/10"
                         android:textAlignment="textEnd"
+                        android:textColor="#1B1A1A"
                         android:textSize="15sp" />
                 </LinearLayout>
 
@@ -124,7 +126,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="40dp"
-                    android:text="orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies enim ut nulla ullamcorper, ut faucibus est tincidunt. "
+                    android:textColor="#1B1A1A"
+                    android:text="chargeNET offers a wide range of EV chargers designed to meet the needs of EV owners at residences, and businesses of various applications "
                     android:textAlignment="center"
                     android:textSize="18dp" />
 
@@ -140,6 +143,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Contact Number : "
+                        android:textColor="#1B1A1A"
                         android:textAlignment="textStart"
                         android:textSize="15sp" />
 
@@ -165,6 +169,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Web : "
+                        android:textColor="#1B1A1A"
                         android:textAlignment="textStart"
                         android:textSize="15sp" />
 
@@ -190,6 +195,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="FaceBook : "
+                        android:textColor="#1B1A1A"
                         android:textAlignment="textStart"
                         android:textSize="15sp" />
 
@@ -215,6 +221,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Instagram : "
+                        android:textColor="#1B1A1A"
                         android:textAlignment="textStart"
                         android:textSize="15sp" />
 
@@ -241,6 +248,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Google Map : "
+                        android:textColor="#1B1A1A"
                         android:textAlignment="textStart"
                         android:textSize="15sp" />
 
@@ -431,6 +439,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
+                        android:textColor="#1B1A1A"
                         android:text="Rating : "/>
 
                     <TextView
@@ -444,6 +453,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="100dp"
+                        android:textColor="#1B1A1A"
                         android:text="Recommended : "/>
 
                     <TextView
@@ -459,6 +469,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
+                    android:textColor="#1B1A1A"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum iaculis dapibus. Integer gravida ut leo in luctus. Duis quis ante dictum, lobortis dolor sit amet, semper eros. Suspendisse vitae enim sapien."/>
 
             </LinearLayout>
@@ -522,7 +533,7 @@
             android:backgroundTint="@color/white"
             android:drawableTop="@drawable/baseline_pin_drop_24"
             android:padding="5dp"
-            android:text="Map"
+            android:text="Station"
             android:textColor="#009688" />
 
         <Button
