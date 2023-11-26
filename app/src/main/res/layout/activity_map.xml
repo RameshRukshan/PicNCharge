@@ -57,7 +57,7 @@
             android:backgroundTint="#009688"
             android:drawableTop="@drawable/baseline_pin_drop_white"
             android:padding="5dp"
-            android:text="Map"
+            android:text="Station"
             app:cornerRadius="@dimen/activity_vertical_margin" />
 
         <Button
@@ -90,20 +90,82 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="90dp"
         android:layout_marginBottom="100dp"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn_test"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MAP"
-                android:layout_gravity="center"/>
+            <LinearLayout
+                android:id="@+id/sec_station_charging_station"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/picnchargeimg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/curved_background"
+                    android:gravity="center_horizontal|center_vertical">
+                    <TextView
+                        android:id="@+id/lbl_edit_vehicle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ChargeNET Colombo 7"
+                        android:layout_marginTop="20dp"
+                        android:textAlignment="viewStart"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:textColor="#009688"
+                        android:textStyle="bold"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lbl_charging_station_reg_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reg No : 78494"
+                            android:textAlignment="textStart"
+                            android:textColor="#020202"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lbl_charging_station_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rating : 6/10"
+                            android:textAlignment="textEnd"
+                            android:textColor="#0B0B0B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
 
         </LinearLayout>
     </ScrollView>

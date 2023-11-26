@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.LinearLayout
 
 class map : AppCompatActivity() {
     lateinit var nav_home : Button
@@ -20,7 +21,7 @@ class map : AppCompatActivity() {
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
 
-        var test_btn = findViewById<Button>(R.id.btn_test)
+        var test_btn = findViewById<LinearLayout>(R.id.sec_station_charging_station)
         test_btn.setOnClickListener(){
             var go_to_cS = Intent(this, Charging_Station::class.java)
             startActivity(go_to_cS)

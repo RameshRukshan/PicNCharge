@@ -14,6 +14,9 @@ class add_vehicle : AppCompatActivity() {
     lateinit var nav_profile : Button
     lateinit var nav_notification : Button
 
+    lateinit var add_car : Button
+    lateinit var cancel : Button
+
     // Define arrays of values for each spinner
     val batteryCapacityValues = arrayOf("100 kWh", "50 kWh", "75 kWh", "66 kWh", "40 kWh", "90 kWh", "42.2 kWh", "88 kWh")
     val chargingPortValues = arrayOf("Type 1 SEAJ1772", "Type 2 Mennekes", "CHAdeMO", "CCS", "Supercharger")
@@ -27,6 +30,9 @@ class add_vehicle : AppCompatActivity() {
         nav_map = findViewById(R.id.btn_nav_map)
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
+
+        add_car = findViewById(R.id.btn_add_vehicle_add_car)
+        cancel = findViewById(R.id.btn_cancel)
 
         val spinnerBatteryCapacity: Spinner = findViewById(R.id.spinner_battery_capacity)
         val spinnerChargingPort: Spinner = findViewById(R.id.spinner_charging_port)
@@ -47,6 +53,15 @@ class add_vehicle : AppCompatActivity() {
         spinnerChargingPort.adapter = adapterChargingPort
         spinnerChargingType.adapter = adapterChargingType
 
+        add_car.setOnClickListener(){
+            var go_back_to_profile = Intent(this, profile::class.java)
+            startActivity(go_back_to_profile)
+        }
+
+        cancel.setOnClickListener(){
+            var go_back_to_profile = Intent(this, profile::class.java)
+            startActivity(go_back_to_profile)
+        }
 
         nav_home.setOnClickListener(){
             var go_to_home = Intent(this, dashboard::class.java)
