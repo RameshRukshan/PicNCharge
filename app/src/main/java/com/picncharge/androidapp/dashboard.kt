@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.FragmentManager
 import com.picncharge.androidapp.databinding.ActivityMainBinding
 
@@ -14,6 +15,9 @@ class dashboard : AppCompatActivity(){
     lateinit var nav_map : Button
     lateinit var nav_profile : Button
     lateinit var nav_notification : Button
+
+    lateinit var nav_all_reservations : TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -22,6 +26,12 @@ class dashboard : AppCompatActivity(){
         nav_map = findViewById(R.id.btn_nav_map)
         nav_profile = findViewById(R.id.btn_nav_profile)
         nav_notification = findViewById(R.id.btn_nav_notification)
+        nav_all_reservations = findViewById(R.id.btn_view_all_res_link)
+
+        nav_all_reservations.setOnClickListener(){
+            var go_to_my_reservations = Intent(this, my_reservations::class.java)
+            startActivity(go_to_my_reservations)
+        }
 
         nav_home.setOnClickListener(){
             var go_to_home = Intent(this, dashboard::class.java)
