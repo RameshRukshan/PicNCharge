@@ -52,8 +52,6 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-<<<<<<< Updated upstream
-=======
     implementation ("com.google.android.gms:play-services-maps:17.0.0")
     // Import the Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
@@ -62,5 +60,4 @@ dependencies {
 
     // Add the dependency for the Firebase SDK for Google Analytics
     implementation("com.google.firebase:firebase-analytics")
->>>>>>> Stashed changes
 }
