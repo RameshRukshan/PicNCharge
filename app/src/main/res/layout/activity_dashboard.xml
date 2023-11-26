@@ -111,15 +111,25 @@
                 android:hint="Search"
                 android:inputType="text"
                 android:textAlignment="center" />
-
-            <ImageView
-                android:id="@+id/img_map"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_weight="1"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/screenshot_2023_10_24_123544" />
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/curved_background"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Map Loading Failed"
+                    android:textAlignment="center"
+                    android:textColor="#CC9F9D9D"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
