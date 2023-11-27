@@ -31,7 +31,7 @@ class login : AppCompatActivity() {
         btn_cancel = findViewById(R.id.btn_login_cancell)
 
         btn_signup.setOnClickListener(){
-            var go_to_signup = Intent(this, sign_up::class.java)
+            var go_to_signup = Intent(this, Signup::class.java)
             startActivity(go_to_signup)
         }
 

@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 
 
-class sign_up : AppCompatActivity() {
+class Signup : AppCompatActivity() {
 
     private lateinit var usernameEditText: EditText
     private lateinit var emailEditText: EditText
