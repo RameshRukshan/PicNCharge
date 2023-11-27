@@ -7,9 +7,16 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.FragmentManager
 import com.picncharge.androidapp.databinding.ActivityMainBinding
+import androidx.fragment.app.FragmentActivity
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 
 
-class dashboard : AppCompatActivity(){
+class dashboard : AppCompatActivity(), OnMapReadyCallback {
 
     lateinit var nav_home : Button
     lateinit var nav_map : Button
@@ -17,6 +24,7 @@ class dashboard : AppCompatActivity(){
     lateinit var nav_notification : Button
 
     lateinit var nav_all_reservations : TextView
+    private lateinit var mMap: GoogleMap
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +60,20 @@ class dashboard : AppCompatActivity(){
             var go_to_notification = Intent(this, notification::class.java)
             startActivity(go_to_notification)
         }
+
+        val mapFragment = supportFragmentManager
+            .findFragmentById(R.id.dashmap) as SupportMapFragment
+        mapFragment.getMapAsync(this)
     }
 
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
+
+        // Location of Colombo
+        val colombo = LatLng(6.9271, 79.8612)
+
+        // Add a marker at Colombo and move the camera
+        mMap.addMarker(MarkerOptions().position(colombo).title("Marker in Colombo"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(colombo, 10f))
+    }
 }
